@@ -1,0 +1,30 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Oğuzhan Yılmaz <ooguzhanyilmazz41@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "prepack": "yarn build",
+    "build": "rollup -c --bundleConfigAsCjs",
+    "watch": "rollup -cw"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@types/react": "^18.2.64",
+    "react": "^18.2.0",
+    "rollup": "^4.12.1",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.4.2"
+  }
+}
